@@ -7,9 +7,7 @@ Then, the output should be: bag, hello, without, world
 Ask the user to enter a string, and check if it is a palindrome. If yes,
 print True, or else print False.
 
-The second part of the program prompts for a second string and determines whether
-or not it is a palindrome and prints the result. Spaces are ignored.  Funny example:
-Taco cat.
+Funny example: Taco cat.
 
 """
 user_inp = input('Please enter a comma-separated list of words: ')
