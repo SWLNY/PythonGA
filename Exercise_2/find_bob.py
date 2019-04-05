@@ -14,3 +14,6 @@ for i in range(len(input_str) - 2):
         bob_cnt += 1  # If 'bob' found, increment counter.
 print("You entered: "+input_str)  # Inform the user
 print("Number of times 'bob' found: "+str(bob_cnt))
+
+input_str2 = input("\nPlease enter the string to reverse: ")
+print(input_str2[::-1])  # Reverse the letters in the input string and display
