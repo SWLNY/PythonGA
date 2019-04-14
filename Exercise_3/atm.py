@@ -16,7 +16,7 @@ class Customer:
         self.state = state  # Two character state, e.g. NY and NJ
         self.zip = zip  # 5 digit postal zip code
         self.pin = pin  # 4 character pin number for authentication
-        self.accts = {}
+        self.accts = {}  # Dictionary where key is account number and value is account object
         self.num_s_accts = 0  # Number of savings accounts. Used to build acct id.
         self.num_c_accts = 0  # Number of checking accounts. Used to build acct id.
 
@@ -43,9 +43,13 @@ class Customer:
 
 
     def print_cust(self):
-        print('Name: ' + self.name)
+        print('\nName: ' + self.name)
         print('Customer number: ' + self.cust_id)
-        #  for current_cust in self.accts:
+        print("Address: " + self.street + ", " + self.city + ", " + self.zip)
+        print("Accounts:")
+        for key, value in self.accts.items():
+            print(f"Account: {key} Type: {value.acct_type} Balance: ${value.balance:.2f}")
+
 
     def validate(self, inp_pin):
         """
@@ -94,17 +98,16 @@ def load_db():
     testing.
     :return:
     """
-    new_cust = Customer('Susan Lynch', '123456', '100 E. 21st St.', 'New York', 'NY', 10010, '1555')
+    new_cust = Customer('Susan Lynch', '123456', '100 E. 21st St.', 'New York', 'NY', '10010', '1555')
     cust_dict["123456"] = new_cust  # Save customer id and customer object
     new_cust.open_acct("savings", 500.00)
     new_cust.open_acct("checking", 1000.00)
-    print("123456 savings 12345600 pin= 1555")
-    print("123456 checking 12345609")
+    new_cust.print_cust()
 
     new_cust = Customer('Karen Widing', '567899', '65 Prospect St.', 'New Paltz', 'NY', '12561', '9999')
     cust_dict["567899"] = new_cust  # Save customer id and customer object
     new_cust.open_acct("checking", 750.00)
-    print("567899 checking 56789909 pin=9999")
+    new_cust.print_cust()
 
 def main():
     load_db()  # Load test data
@@ -136,5 +139,5 @@ def main():
             print('Invalid customer number. Try again.')
 
 if __name__ == "__main__":
-    # execute only if run as a script
+
     main()
