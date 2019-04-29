@@ -61,9 +61,10 @@ class Customer:
         with open('transactions.txt', 'r') as trans_hist:
             history = trans_hist.readlines()  # history is a list with one entry for each logged transaction.
 
-        for key, value in self.accts.items():  # accts is a list of the all account objects for one customer
-            print(f"\nAccount: {key} Type: {value.acct_type} Balance: ${value.balance:.2f}")
+        #  accts is dictionary where key is account id and value is account object. Gives all accounts for
+        #  the current customer.
 
+        for key, value in self.accts.items():
             #  Split each log entry into the component parts. Parts are account id, customer id, timestamp,
             #  transaction type, transaction amount and balance after processing the transaction.
             t_lst=[]
