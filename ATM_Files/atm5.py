@@ -57,7 +57,7 @@ class Customer:
         print("Address: " + self.street + ", " + self.city + ", " + self.zipcode)
         print("\nAccounts:")
 
-        # Read transaction log. A single log is by all customers and accounts.
+        # Read transaction log. A single log file is used for all customers and accounts.
         with open('transactions.txt', 'r') as trans_hist:
             history = trans_hist.readlines()  # history is a list with one entry for each logged transaction.
 
