@@ -1,0 +1,67 @@
+Amount of deposit is $500.00
+New balance is: $500.00
+Amount of deposit is $1000.00
+New balance is: $1000.00
+Amount of deposit is $750.00
+New balance is: $750.00
+Amount of deposit is $750.00
+New balance is: $750.00
+
+Please enter your bank customer number or x: Please enter your customer pin or x: Deposit(d), withdrawal(w), transfer(t), balance(b), statement(s) or exit(x)?
+Enter transaction type (d, w, t, b, s or x): Please enter your account number or x: Please enter withdrawal amount: Amount of withdrawal is $10.00
+New balance is: $740.00
+
+Please enter your bank customer number or x: Please enter your customer pin or x: Deposit(d), withdrawal(w), transfer(t), balance(b), statement(s) or exit(x)?
+Enter transaction type (d, w, t, b, s or x): Please enter your account number or x: Please enter withdrawal amount: Amount of withdrawal is $25.00
+New balance is: $715.00
+
+Please enter your bank customer number or x: Please enter your customer pin or x: Deposit(d), withdrawal(w), transfer(t), balance(b), statement(s) or exit(x)?
+Enter transaction type (d, w, t, b, s or x): Please enter your account number or x: Please enter the receiving account number or x: Please enter the amount of your transfer: Amount of withdrawal is $100.00
+New balance is: $615.00
+Amount of deposit is $100.00
+New balance is: $850.00
+
+Please enter your bank customer number or x: Please enter your customer pin or x: Deposit(d), withdrawal(w), transfer(t), balance(b), statement(s) or exit(x)?
+Enter transaction type (d, w, t, b, s or x): 
+Name: Karen Widing
+Customer number: 567899
+Address: 65 Prospect St., New Paltz, 12561
+
+Accounts:
+
+Account: 56789909 Type: Checking Balance: $850.00
+		2019-04-29T07:26	Deposit   	    100.00	    850.00
+		2019-04-29T07:25	Deposit   	    750.00	    750.00
+
+Account: 56789900 Type: Savings Balance: $615.00
+		2019-04-29T07:26	Withdrawal	    100.00	    615.00
+		2019-04-29T07:26	Withdrawal	     25.00	    715.00
+		2019-04-29T07:25	Withdrawal	     10.00	    740.00
+		2019-04-29T07:25	Deposit   	    750.00	    750.00
+
+Please enter your bank customer number or x: Invalid customer number. Try again.
+
+Please enter your bank customer number or x: Please enter your customer pin or x: Deposit(d), withdrawal(w), transfer(t), balance(b), statement(s) or exit(x)?
+Enter transaction type (d, w, t, b, s or x): Please enter your account number or x: The current balance in your account is: $500.00
+
+Please enter your bank customer number or x: Please enter your customer pin or x: Deposit(d), withdrawal(w), transfer(t), balance(b), statement(s) or exit(x)?
+Enter transaction type (d, w, t, b, s or x): Please enter your account number or x: Invalid account number specified
+Please enter your account number or x: Please enter the amount of your deposit: Amount of deposit is $1000.00
+New balance is: $1500.00
+
+Please enter your bank customer number or x: Please enter your customer pin or x: Deposit(d), withdrawal(w), transfer(t), balance(b), statement(s) or exit(x)?
+Enter transaction type (d, w, t, b, s or x): 
+Name: Susan Lynch
+Customer number: 123456
+Address: 100 E. 21st St., New York, 10010
+
+Accounts:
+
+Account: 12345600 Type: Savings Balance: $1500.00
+		2019-04-29T07:28	Deposit   	   1000.00	   1500.00
+		2019-04-29T07:25	Deposit   	    500.00	    500.00
+
+Account: 12345609 Type: Checking Balance: $1000.00
+		2019-04-29T07:25	Deposit   	   1000.00	   1000.00
+
+Please enter your bank customer number or x: 
